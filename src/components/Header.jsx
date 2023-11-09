@@ -1,10 +1,19 @@
-import { RiShoppingCartLine,RiHeart2Line } from "react-icons/ri";
+import { useState } from "react";
+import { RiShoppingCartLine,RiHeart2Line,RiMenu2Line } from "react-icons/ri";
 
 export const Header = () => {
+  const [showMenu,setShowMenu] = useState(false)
   return (
     <header className= "h-[10vh] text-gray-300 p-4 flex items-center justify-between bg-[#181a20] z-40 ">
+      {/* Movil */}
+      <button onClick={()=> setShowMenu(!showMenu)} className="lg:hidden text-2xl"><RiMenu2Line/></button>
+      <div className={`fixed  left-0 top-0 w-full h-full z-60 transition-all ${showMenu ? "left-0" : "-left-full"}`}>
+        <ul>
+          Menu Movil
+        </ul>
+      </div>
       {/* Menu */}
-      <ul className="flex items-center gap-6">
+      <ul className="hidden lg:flex items-center gap-6">
         <li>
           <a href="#" className="hover:text-[#E58D27] transition-colors">Home</a>
         </li>
