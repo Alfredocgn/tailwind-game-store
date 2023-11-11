@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { RiShoppingCartLine,RiHeart2Line,RiMenu2Line } from "react-icons/ri";
+import { RiShoppingCartLine,RiHeart2Line,RiMenu2Line, RiCloseLine } from "react-icons/ri";
 
 export const Header = () => {
   const [showMenu,setShowMenu] = useState(false)
@@ -7,9 +7,23 @@ export const Header = () => {
     <header className= "h-[10vh] text-gray-300 p-4 flex items-center justify-between bg-[#181a20] z-40 ">
       {/* Movil */}
       <button onClick={()=> setShowMenu(!showMenu)} className="lg:hidden text-2xl"><RiMenu2Line/></button>
-      <div className={`fixed  left-0 top-0 w-full h-full z-60 transition-all ${showMenu ? "left-0" : "-left-full"}`}>
-        <ul>
-          Menu Movil
+      <div className={`fixed bg-[#181a20] left-0 w-full h-full z-60 transition-all ${showMenu ? "top-0" : "-top-full"}`}>
+          <button onClick={()=> setShowMenu(!showMenu)} className="text-3xl p-4">
+            <RiCloseLine/>
+          </button>
+        <ul className="">
+            <li>
+              <a href="#" className="text-4xl block text-center p-4 ">Home</a>
+            </li>
+            <li>
+              <a href="#" className="text-4xl  block text-center p-4 ">Streams</a>
+            </li>
+            <li>
+              <a href="#" className="block text-center p-4 text-4xl  ">Game Store</a>
+            </li>
+            <li>
+              <a href="#" className="block text-center p-4 text-4xl  ">News</a>
+            </li>
         </ul>
       </div>
       {/* Menu */}
