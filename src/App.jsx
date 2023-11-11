@@ -8,7 +8,7 @@ function App() {
     <>
     <div className="">
       <Header/>
-      <main className="h-[90vh] p-8 flex gap-8">
+      <main className="h-[90vh] p-8 pt-0 flex gap-8">
         <Sidebar/>
         <Content/>
       </main>

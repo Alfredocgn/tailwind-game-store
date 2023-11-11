@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { RiShoppingCartLine,RiHeart2Line,RiMenu2Line, RiCloseLine } from "react-icons/ri";
+// bg-[#181a20]
 
 export const Header = () => {
   const [showMenu,setShowMenu] = useState(false)

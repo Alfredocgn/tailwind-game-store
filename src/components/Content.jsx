@@ -7,7 +7,7 @@ export const Content = () => {
         <div className="rounded-xl mb-6">
             <img src="https://stevivor.com/wp-content/uploads/2022/02/horizon-forbidden-west-990x556.webp" alt="Cover" className="w-full h-[500px] object-cover object-right md:object-top rounded-2xl"/>
         </div>
-        <div className="flex items-center md:justify-between flex-wrap gap-4 lg:gap-0">
+        <div className="flex items-center md:justify-around flex-wrap gap-4 lg:gap-2">
           <Card image={"https://i.blogs.es/8449ea/playstation_2023-09-14_21-27-58/500_333.webp"} title={"Marvel's Spider-Man"} cat={"PS5"} price={"51"}/>
           <Card image={"https://image.api.playstation.com/cdn/UP0102/CUSA04772_00/cxd9vkFOAHVwwYG7lQKENGkrfyoAChNh.png"} title={"Resident Evil 7: Biohazard"} cat={"PS4"} price={"60"}/>
           <Card image={"https://upload.wikimedia.org/wikipedia/en/e/ee/God_of_War_Ragnar%C3%B6k_cover.jpg"} title={"God of War: Ragnarök"} cat={"PS5"} price={"50"}/>

@@ -5,7 +5,7 @@ export const Sidebar = () => {
   const [showSidebar,setShowSidebar]= useState(false)
   return (
     <>
-      <div className={`w-[80%] md:w-[40%] transition-all bg-[#181a20] p-4 shadow-2xl fixed top-0 lg:static lg:shadow-none lg:w-80 h-full text-gray-400 ${showSidebar ? "left-0" : "-left-full"}`}>
+      <div className={`w-[80%] md:w-[40%] transition-all bg-[#181a20] p-4 lg:pt-0 shadow-2xl fixed top-0 lg:static lg:shadow-none lg:w-80 h-full text-gray-400 ${showSidebar ? "left-0" : "-left-full"}`}>
         {/* Search */}
         <div className="bg-[#362c29]/50 p-4 rounded-2xl mb-4">
           <h4 className="mb-2 text-white text-lg">Categories</h4>
